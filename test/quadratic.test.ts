@@ -19,4 +19,10 @@ describe('MathBase.solveQuadraticEquation', () => {
     expect(result.x1).toBeNull();
     expect(result.x2).toBeNull();
   });
+
+    test('Должен вернуть один корень, если дискриминант равен нулю', () => {
+    const result = MathBase.solveQuadraticEquation(1, -2, 1); // Дискриминант = 0
+    expect(result.x1).toBe(1);
+    expect(result.x2).toBe(1); // Оба корня одинаковые
+  });
 });
