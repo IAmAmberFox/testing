@@ -11,7 +11,7 @@ export class MathBase {
     
     if (d === 0) {
       const x = -b / (2 * a);
-      return { x1: x, x2: null };
+      return { x1: x, x2: x };
     }
     
     const sqrtD = Math.sqrt(d);
